@@ -3,7 +3,7 @@
 tput sgr0; clear
 
 ## Load text color settings
-source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/tput.sh)
+source <(wget -qO- https://raw.githubusercontent.com/i-abc/Seedbox-Components/main/Miscellaneous/tput.sh)
 
 ## Check Root Privilege
 if [ $(id -u) -ne 0 ]; then 
@@ -68,7 +68,7 @@ function Decision {
 ## Install Seedbox Environment
 tput sgr0; clear
 normal_1; echo "Start Installing Seedbox Environment"; warn_2
-source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/seedbox_installation.sh)
+source <(wget -qO- https://raw.githubusercontent.com/i-abc/Seedbox-Components/main/seedbox_installation.sh)
 Update
 Decision qBittorrent
 Decision Deluge
@@ -78,7 +78,7 @@ Decision autoremove-torrents
 ## Tweaking
 tput sgr0; clear
 normal_1; echo "Start Doing System Tweak"; warn_2
-source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/tweaking.sh)
+source <(wget -qO- https://raw.githubusercontent.com/i-abc/Seedbox-Components/main/tweaking.sh)
 CPU_Tweaking
 NIC_Tweaking
 Network_Other_Tweaking
@@ -90,7 +90,7 @@ Decision Tweaked_BBR
 ## Configue Boot Script
 tput sgr0; clear
 normal_1; echo "Start Configuing Boot Script"
-source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/boot-script.sh)
+source <(wget -qO- https://raw.githubusercontent.com/i-abc/Seedbox-Components/main/Miscellaneous/boot-script.sh)
 boot_script
 tput sgr0; clear
 
